@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { useAtom } from 'jotai';
+import { countAtom } from './atoms';
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);

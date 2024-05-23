@@ -1,5 +1,7 @@
 import React from 'react';
 import { useTheme } from '../Context/ThemeContext';
+import { useAtom } from 'jotai';
+import { countAtom } from './atoms';
 
 const ThemeToggler = () => {
   const { theme, toggleTheme } = useTheme();

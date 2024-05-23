@@ -7,6 +7,8 @@ import { AuthProvider } from './Context/AuthContext';
 import { ThemeProvider } from './Context/ThemeContext';
 import './i18n';
 import ErrorBoundary from './components/ErrorBoundary';
+import { useAtom } from 'jotai';
+import { countAtom } from './components/atoms';
 
 const container = document.getElementById('root');
 const root = createRoot(container);

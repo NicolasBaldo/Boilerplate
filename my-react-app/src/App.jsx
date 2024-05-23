@@ -9,6 +9,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ThemeToggler from './components/ThemeToggler';
 import PrivatePage from './Pages/PrivatePage';
+import { useAtom } from 'jotai';
+import { countAtom } from './components/atoms';
 
 const App = () => {
   return (
