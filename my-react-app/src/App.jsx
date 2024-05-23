@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import NotFoundPage from './Pages/NotFoundPage';
@@ -13,6 +13,19 @@ import PrivatePage from './Pages/PrivatePage';
 const App = () => {
   return (
     <div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/private">Private</Link>
+          </li>
+        </ul>
+      </nav>
       <ThemeToggler />
       <ToastContainer />
       <Routes>
